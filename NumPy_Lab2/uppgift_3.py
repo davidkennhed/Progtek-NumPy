@@ -35,27 +35,6 @@ def frequency_detection(audio_file):
 
 # Uppgift 3 b
 
-"""def pitch_detection(audio_file):
-    F = scipy.fftpack.fft(audio_file[1])
-    num_samples = len(F)
-    sampling_rate = audio_file[0]
-    freq_range = np.fft.fftfreq(num_samples, d=1/sampling_rate)
-    max_freq = freq_range[np.argmax(np.abs(F))]
-    if max_freq == ufloat(261.6256, 5):
-        return max_freq, "C"
-    elif max_freq == ufloat(293.6648, 5):
-        return max_freq, "D"
-    elif max_freq == ufloat(329.6276, 5):
-        return max_freq, "E"
-    elif max_freq == ufloat(349.2282, 5):
-        return max_freq, "F"
-    elif max_freq == ufloat(391.9954, 5):
-        return max_freq, "G"
-    elif max_freq == ufloat(440.0000, 5):
-        return max_freq, "A"
-    else:
-        return max_freq, "Couldn't find note"""
-
 
 def get_pitch(audio_file):
     F = scipy.fftpack.fft(audio_file[1])
